@@ -1,2 +1,2 @@
-# mean_blog
-A simple blog using the MEAN stack
+# MEAN Blog!
+A simple blog using the MEAN stack.
