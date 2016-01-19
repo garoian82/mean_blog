@@ -1,0 +1,33 @@
+@import url(https://fonts.googleapis.com/css?family=Monofett);
+.blog-page {
+  margin-top: 10%;
+}
+.blog-page .post-div {
+  margin-bottom: 10%;
+}
+/*.post-page {
+	margin-top: 10%;
+}*/
+@media (max-width: 900px) {
+  .post-page {
+    margin-top: 5%;
+  }
+}
+@media (max-width: 600px) {
+  .post-page {
+    margin-top: 7%;
+  }
+}
+.navbar {
+  padding: 20px 0;
+  border: none;
+}
+.navbar-inverse .navbar-nav > li > a {
+  font-size: 1em;
+  color: #ffffff;
+}
+.navbar-inverse .navbar-brand {
+  font-size: 3em;
+  color: #ffffff;
+  font-family: 'Monofett', sans-serif;
+}

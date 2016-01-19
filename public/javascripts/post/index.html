@@ -1,0 +1,57 @@
+<nav-bar></nav-bar>
+
+<div class="col-md-4 col-md-offset-4 post-page">
+	<h3>Add a new blog post!</h3>
+	<div class="alert alert-success"
+	     data-ng-if="postCtrl.added">
+	     <p>Your post was added Successfully!</p>
+	 </div>
+	<form name="postForm"
+	      enctype="multipart/form-data">
+		<div class="form-group">
+			<label for="title">Title</label>
+			<input type="text"
+			       data-ng-model="postCtrl.post.title"
+			       class="form-control"
+			       id="title"
+			       required>
+		</div>
+
+		<div class="form-group">
+			<label for="desc">Write about it!</label>
+			<textarea data-ng-model="postCtrl.post.body"
+				        class="form-control"
+				        id="desc"
+				        rows="5"				        
+				        required>
+			</textarea>
+		</div>
+
+		<div class="form-group">
+			<label for="link">Link</label>
+			<input type="url"
+						 data-ng-model="postCtrl.post.link"
+						 class="form-control"
+						 id="title">
+		</div>
+
+		<div class="form-group">
+			<div class="btn btn-primary"
+			     ngf-select
+			     id="blogImages"
+			     data-ng-model="postCtrl.post.blogImages"
+			     ngf-pattern="'image/*'"
+			     accept="image/*"
+			     ngf-multiple="true"
+			     ngf-max-size="10MB">
+			    Select Images				 
+			</div>
+			{{postCtrl.post.blogImages}}
+		</div>
+
+			<button data-ng-click="postCtrl.add(postCtrl.post)"
+					class="btn btn-primary">Submit		
+			</button>
+
+	</form>
+</div>
