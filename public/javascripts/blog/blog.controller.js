@@ -4,7 +4,6 @@
 
 	angular.module('app')
 		.controller('BlogController', function (Posts, posts, post, Users, $rootScope, $state) {
-			debugger;
 			var vm = this;
 
 			vm.post = post;
